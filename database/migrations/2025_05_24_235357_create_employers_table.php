@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('job_listings', function (Blueprint $table) {
-            $table->foreignIdFor(\App\Models\Employer::class)->nullable();
+        Schema::create('employers', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
         });
     }
 
@@ -22,8 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('job_listings', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('employers');
     }
 };
