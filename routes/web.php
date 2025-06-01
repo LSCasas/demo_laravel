@@ -1,24 +1,19 @@
 <?php
 
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\RegisteredUserController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Job;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::view('/', 'home');
+Route::view('/contact', 'contact');
 
-Route::get('/jobs', function () {
-    return view('jobs', [
-        'jobs' => Job::all()
-    ]);
-});
+Route::resource('jobs', JobController::class);
 
-Route::get('/jobs/{id}', function ($id) {
-    $job = Job::find($id);
+// Auth
+Route::get('/register', [RegisteredUserController::class, 'create']);
+Route::post('/register', [RegisteredUserController::class, 'store']);
 
-    return view('job', ['job' => $job]);
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/login', [SessionController::class, 'create']);
+Route::post('/login', [SessionController::class, 'store']);
+Route::post('/logout', [SessionController::class, 'destroy']);
