@@ -1,6 +1,6 @@
 # Laravel Job Management App
 
-A web application built with the Laravel PHP framework to manage job entries and user authentication. This project showcases CRUD operations, background job processing, and route/controller architecture using Laravel.  
+A web application built with the Laravel PHP framework to manage job entries and user authentication. This project showcases CRUD operations, background job processing, and route/controller architecture using Laravel.
 
 ---
 
@@ -20,7 +20,7 @@ A web application built with the Laravel PHP framework to manage job entries and
 ## Project Structure
 
 ```
-demo_php/
+demo_laravel/
 ├── app/Http/Controllers/     # Application controllers
 ├── app/Jobs/                 # Background job classes (e.g., TranslateJob)
 ├── database/migrations/      # DB migration files
@@ -47,8 +47,8 @@ demo_php/
 1. **Clone the repository:**
 
     ```bash
-    git clone git@github.com:LSCasas/demo_php.git
-    cd demo_php
+    git clone git@github.com:LSCasas/demo_laravel.git
+    cd demo_laravel
     ```
 
 2. **Install dependencies:**
@@ -60,7 +60,7 @@ demo_php/
 3. **Set up the environment file:**
 
     ```bash
-    cp .env.demo_php .env
+    cp .env.demo_laravel .env
     ```
 
     Then update `.env` with your database credentials and app configuration.
