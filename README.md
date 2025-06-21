@@ -20,7 +20,7 @@ A web application built with the Laravel PHP framework to manage job entries and
 ## Project Structure
 
 ```
-example/
+demo_php/
 ├── app/Http/Controllers/     # Application controllers
 ├── app/Jobs/                 # Background job classes (e.g., TranslateJob)
 ├── database/migrations/      # DB migration files
@@ -47,8 +47,8 @@ example/
 1. **Clone the repository:**
 
     ```bash
-    git clone git@github.com:LSCasas/example.git
-    cd example
+    git clone git@github.com:LSCasas/demo_php.git
+    cd demo_php
     ```
 
 2. **Install dependencies:**
@@ -60,7 +60,7 @@ example/
 3. **Set up the environment file:**
 
     ```bash
-    cp .env.example .env
+    cp .env.demo_php .env
     ```
 
     Then update `.env` with your database credentials and app configuration.
