@@ -1,6 +1,6 @@
 # Laravel Job Management App
 
-A web application built with the Laravel PHP framework to manage job entries and user authentication. This project showcases CRUD operations, background job processing, and route/controller architecture using Laravel.
+A web application built with the Laravel PHP framework to manage job entries and user authentication. This project showcases CRUD operations, background job processing, and route/controller architecture using Laravel. 
 
 ---
 
