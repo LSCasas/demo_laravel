@@ -4,7 +4,7 @@ A web application built with the Laravel PHP framework to manage job entries and
   
 --- 
 
-## Table of Contents
+## Table of Contents 
 
 -   [Project Structure](#project-structure)
 -   [Features](#features)
